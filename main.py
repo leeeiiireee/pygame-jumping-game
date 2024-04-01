@@ -11,7 +11,7 @@ pink = (255, 192, 203)
 WIDTH = 400  # width of game window
 HEIGHT = 500 # height of game window
 background = white
-player = pygame.transform.scale(pygame.image.load('tomi2.png'), (90, 70)) # load image of player, in our case a pink cat
+player = pygame.transform.scale(pygame.image.load('kittycat.png'), (90, 70)) # load image of player, in our case a pink cat
 fps = 60 
 font = pygame.font.SysFont("arial", 16) 
 timer = pygame.time.Clock() 
@@ -158,9 +158,9 @@ while running == True:
     
     # change direction of cat based on movement so it looks like the cat is facing the direction its moving
     if x_change > 0:
-        player = pygame.transform.scale(pygame.image.load('tomi2.png'), (90, 70)) 
+        player = pygame.transform.scale(pygame.image.load('kittycat.png'), (90, 70)) 
     elif x_change < 0:
-        player = pygame.transform.flip(pygame.transform.scale(pygame.image.load('tomi2.png'), (90, 70)), 1, 0)
+        player = pygame.transform.flip(pygame.transform.scale(pygame.image.load('kittycat.png'), (90, 70)), 1, 0)
 
 
     if score > high_score:
